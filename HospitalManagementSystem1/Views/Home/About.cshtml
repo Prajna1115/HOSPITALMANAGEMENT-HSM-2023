@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+<h1 style="margin: 6rem 0 2rem 0; text-align: center; color: #6c5ce7; justify-content:center">
+
+    My Fellow Indians,
+
+</h1>
+<p style="
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+">
+
+    Over the years our institution has been the pioneer of healthcare in India,
+    and we are humbled by the love and trust placed in us by over 200 million patients
+    and their families. It has motivated us to put in tireless efforts and remain unwavering
+    in our commitment to bring you the best healthcare in the world. As we enter our 2023, I
+    want to re-affirm this commitment - We will always bring you the best healthcare in the world,
+    no matter what.
+    <br />
+    <br />
+    This is our mission.We bring the best, most comprehensive omnichannel care to you
+    wherever you are and whenever you need it. We have the best doctors and the most care-focused teams
+    coupled with the most advanced equipment, cutting-edge treatments and technologies, including Proton
+    therapy, robotic surgeries, artificial intelligence and more. These ensure we can get you healthy quickly
+    so you can get back to leading a happy and fulfilling life. As our country emerges from the pandemic,
+    sedentary lifestyles and unhealthy diets have made our youth susceptible to chronic diseases. Over 50% of
+    premature mortality in India in the 30+ age group can be attributed to NCDs. To become a developed nation,
+    we must first ensure that we are a healthy nation, and we are committed to battling the NCD epidemic to ensure
+    the youth of our nation remains healthy and can accelerate our nation’s development. But there is much more to
+    be done, and I believe we are just getting started.
+    <br />
+    <br />
+    Over the next upcoming decades, we will work towards making
+    healthcare more proactive and preventive. In fact, our measure of success would be if you never need to visit a
+    hospital at all. We’ve made significant investments in this area with ProHealth. It is a unique program that combines
+    artificial intelligence, cutting-edge diagnostics and physician evaluation to provide you insights into your health
+    risks as well as a personalised path to prevention. Our Prime Minister’s clarion call for ‘Heal in India’ is a great
+    endorsement and a signal that the world needs a new vision for healthcare. A system that is holistic. A system that
+    is proactive and a system that optimises quality of life.
+
+    <br />
+    <br />
+    I believe India, with its heritage of holistic healthcare,
+    can take the lead in providing this new system of care to the world. Patients from over 150 countries come to India
+    for treatment that is at par with western countries at a fraction of the cost. With the ‘Heal in India’ initiative,
+    I am sure we will have the opportunity to serve many more people from around the world right here in India. We will
+    do all this and more to deliver on our commitment to provide you with the best care in the world. You are the reason
+    we will continue to build us to be the most trusted and loved healthcare institution in the world. But we also want
+    to hear directly from you. If you think there is anything more we can do to help you live healthier, please write to
+    us directly. Our institution members look forward to your suggestions and will do everything we can to implement them.
+    The entire team conveys our best wishes to you, and we want
+    to remind you that your life is precious. Take care of it and stay healthy.
+    <br />
+    <br />
+    With Regards,
+</p>
+<h1 style="margin: 5rem 0; color: #6c5ce7;">Our Team</h1>
+
+
+
+<div class="row">
+
+    <div class="team-box">
+        <div class="member member1"></div>
+        <div class="member member2"></div>
+        <div class="member member3"></div>
+        <div class="member member4"></div>
+        <div class="member member5"></div>
+    </div>
+
+</div>
+
+
+<!-- custom carousel   -->
+@*<div style="margin:0;
+        margin-top: 7rem;
+    " class="carousel">
+        <h1 style="margin-bottom: 10rem; color: #6c5ce7;">Our Team</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item team-info">
+
+                <img src="~/Images/nipun (2).jpg" alt="img">
+
+                <p class="name">Nipun Gupta</p>
+
+            </div>
+            <div class="item team-info">
+                <img src="~/Images/mayank.jpg" alt="img">
+                <p class="name">Mayank Jain</p>
+
+            </div>
+            <div class="item team-info">
+                <img src="~/Images/tanushree.jpg" alt="img">
+                <p class="name">Tanushree Nayaka</p>
+
+            </div>
+            <div class="item team-info">
+                <img src="~/Images/saho.JPG" alt="img">
+                <p class="name">Prajna parimita Sahoo</p>
+
+            </div>
+            <div class="item team-info">
+                <img src="~/Images/shweta.JPG" alt="img">
+                <p class="name">Shwetha R B</p>
+
+            </div>
+        </div>
+        <a href="#">Get Started</a>
+    </div>*@
+
+<!-- script  -->
+<script src="jquery.min.js"></script>
+<script src="~/Scripts/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        margin: 15,
+        nav: false,
+        loop: false,
+        responsive: {
+            0: {
+                items: 1,
+
+            },
+            600: {
+                items: 2,
+
+            },
+            //1000: {
+            //    items: 3,
+
+            //},
+            // 1200: {
+            //   items: 4,
+
+            // }
+        }
+    })
+</script>

@@ -1,0 +1,376 @@
+﻿@model IEnumerable<MyClassLibrary.Models.Appointment>
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@*jumbotron*@
+
+<div class="jumbotron">
+    <h1 style="
+    color: #2f92a9;
+" >Welcome To Our Hospital Portal</h1>
+    <p class="lead">World Class Services Await You!!</p>
+    <p><a href="/Home/About" class="btn btn-warning btn-md">About Us &raquo;</a></p>
+</div>
+
+<!--Carousel-->
+<!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+<!-- Indicators -->
+<!--<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>-->
+<!-- Wrapper for slides -->
+<!--<div class="carousel-inner">
+    <div id="Carousel1" class="item active">
+
+        <div class="carousel-caption">
+            <h3>Heading 1</h3>
+            <p>Para 1</p>
+        </div>
+    </div>
+
+    <div id="Carousel2" class="item">
+
+
+        <div class="carousel-caption">
+            <h3>Heading 2</h3>
+            <p>Para 2</p>
+        </div>
+    </div>
+
+    <div id="Carousel3" class="item">
+
+
+        <div class="carousel-caption">
+            <h3>Heading 3</h3>
+            <p>Para 3</p>
+        </div>
+    </div>
+</div>-->
+<!-- Left and right controls -->
+<!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>-->
+@*info div*@
+
+<div class="info-box-container">
+
+    <h1>Our Departments</h1>
+
+    <div class="boxes-container">
+
+        <div class="box">
+            <img src="~/Images/Ophthalmology.png" />
+            <h2>Ophthalmology</h2>
+
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal1">View Info</button>
+
+        </div>
+
+
+        <div class="box">
+            <img src="~/Images/Radiology.png" />
+            <h2>Radiology</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2">View Info</button>
+        </div>
+
+        <div class="box">
+            <img src="~/Images/Cardiology.png" />
+            <h2>Cardiology</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3">View Info</button>
+        </div>
+
+        <div class="box">
+            <img src="~/Images/Dental.png" />
+            <h2>Dental</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal4">View Info</button>
+        </div>
+
+
+        <div class="box">
+            <img src="~/Images/Neurology.png" />
+            <h2>Neurology</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal5">View Info</button>
+        </div>
+
+        <div class="box">
+            <img src="~/Images/orthopaedics.png" />
+            <h2>Orthopaedics</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal6">View Info</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- custom carousel   -->
+<div class="carousel">
+    <h1>What they’ve said</h1>
+    <div class="owl-carousel owl-theme">
+
+
+        @foreach (var item in Model)
+        {
+            string path = "../Images/" + item.fbid.FeedbackRating + "star.png";
+
+            <div class="item">
+
+                <img src="@Url.Content(item.ptid.PatientImagePath)" alt="img" />
+                <p class="name">@item.ptid.PatientName</p>
+                <p>
+                    @item.fbid.FeedbackDesc
+
+                </p>
+                <img style=" transform: translateX(-50%);position: relative;max-width: 25%;" src=@path alt="img" />
+            </div>
+        }
+
+
+        @*<div class="item">
+            <img src="~/Images/avatar-ali.png" alt="img">
+            <p class="name">Anisha Li</p>
+            <p>
+                “Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+            </p>
+            <img style=" transform: translateX(-50%);position: relative;max-width: 25%;" src="~/Images/5star.png" alt="img" />
+        </div>*@
+        @*<div class="item">
+            <img src="~/Images/avatar-anisha.png" alt="img">
+            <p class="name">Ali Bravo</p>
+            <p>
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+            <img style=" transform: translateX(-50%);position: relative;max-width: 25%;" src="~/Images/4star.png" alt="img" />
+        </div>
+        <div class="item">
+            <img src="~/Images/avatar-richard.png" alt="img">
+            <p class="name">Anisha Li</p>
+            <p>
+                “We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+            </p>
+            <img style=" transform: translateX(-50%);position: relative;max-width: 25%;" src="~/Images/3star.png" alt="img" />
+        </div>
+        <div class="item">
+            <img src="~/Images/avatar-shanai.png" alt="img">
+            <p class="name">Shanai Gough</p>
+            <p>
+                “Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+            </p>
+            <img style=" transform: translateX(-50%);position: relative;max-width: 25%;" src="~/Images/2star.png" alt="img" />
+        </div>*@
+    </div>
+    <a href="#">Get Started</a>
+</div>
+
+
+<!-- Modal1 -->
+<div id="myModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal1 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Ophthalmology</h4>
+            </div>
+            <div class="modal-body">
+                <p>Ophthalmology is the branch of medicine that deals with the anatomy, physiology and diseases of the eye.
+                An ophthalmologist is a specialist in medical and surgical eye problems. Ophthalmology includes sub-specialties
+                which deal either with certain diseases or diseases of certain parts of the eye.[HN] provides state-of-the-art care
+                for all facets and stages of eye conditions. We use the latest techniques and therapies to administer routine eye examinations 
+                offer various eye related treatments including glaucoma treatment in India.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+
+
+<!-- Modal2 -->
+<div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal2 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Radiology</h4>
+            </div>
+            <div class="modal-body">
+                <p>Radiology and diagnostic imaging are critical services that support all medical specialities.
+                It is through radiological investigations that correct diagnosis and appropriate medical treatment may be provided. 
+                Our Department of Radiology offers precise diagnostic imaging timely reporting and Image guided Interventional Radiology
+                Services.The department is equipped with best-in-class technology. Some of the latest radiology apparatus includes a Picture 
+                Archiving and Communication System (PACS) that is used to archive and report every image that is generated.We constantly update 
+                our knowledge about new sub-domains of radiology to ensure patients get accurate reports and receive quality care and treatment.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal3 -->
+<div id="myModal3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal3 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Cardiology</h4>
+            </div>
+            <div class="modal-body">
+                <p>While work is an important part of life, one cannot compromise where heath is concerned.Getting yourself 
+                tested and treated from the best of Cardiology doctors for all your issues is not only a wise choice but also 
+                a vital one in order to ensure healthy living. This especially applies to critical illnesses affecting the heart. 
+                With a team comprising of the best Cardiologists and Cardiothoracic Surgeons in India,the [HN] caters to all your heart
+                health needs. The Centre provides diagnosis and treatment for a wide spectrum of conditions with its unsurpassed expertise
+                and knowledge, making it the best heart surgery in India. With state-of-the-art technology and equipment's, our
+                heart surgeons help in improving your cardiac health and allow you to live a carefree life.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal4 -->
+<div id="myModal4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal4 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Dental</h4>
+            </div>
+            <div class="modal-body">
+                <p>The department of dentistry at [HN] has a team of specialists is available on a need basis.
+                We provide a wide range of dental care from basic diagnosis, and routine dental procedures to 
+                complex reconstructive surgeries. Dental treatments are done here under National guidelines in
+                hygiene and infection control. Specialized treatments are rendered by skillful and experienced dentist.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal5 -->
+<div id="myModal5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal5 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Neurology</h4>
+            </div>
+            <div class="modal-body">
+                <p>Neurology is the branch of medicine that is concerned with the study and treatment of disorders of the nervous system.The  
+                healthcare provider who specializes in neurology is called a neurologist.[HN] offers the latest in neurological care with
+                innovative therapies, new techniques and clinical trials developed by our world-class experts. Our neurologists adults and 
+                children each year, including those with complex or rare conditions.[HN] Department of Neurology is one of the largest and 
+                most comprehensive neurological practices in the world. It includes experts trained in diagnosing and treating people with epilepsy
+                , aneurysms, spinal bifida, movement disorders, dementias, stroke, brain tumors, multiple sclerosis, headache, neuromuscular diseases,
+                peripheral nerve tumors, paralysis, nerve pain, sleep disorders, speech disorders and many other conditions.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal6 -->
+<div id="myModal6" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal6 content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Orthopaedics</h4>
+            </div>
+            <div class="modal-body">
+                <p>The [HN] department of Orthopedics is regarded as one of the top Orthopedics department with a 
+                legacy of innovation and excellence.The Institutes are at the forefront in offering the latest in 
+                Orthopedic treatments and Orthopedic surgical advancements in India on par with the best centres in
+                the world.Our Orthopedicians trained at the top centres worldwide, bring with them the latest and best 
+                techniques and work in our facilities that have the latest cutting edge technology in terms of equipments,
+                operating rooms, recovery areas and advanced Physical therapy facilities.We have dedicated & well equipped Orthopedic
+                surgery complexes with laminar flow & various modern equipment like image intensifier, 
+                operating microscope, computer navigation system, top of the line arthroscopy system etc.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- script  -->
+<script src="jquery.min.js"></script>
+<script src="~/Scripts/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        margin: 15,
+        nav: false,
+        loop: false,
+        responsive: {
+            0: {
+                items: 1,
+
+            },
+            600: {
+                items: 2,
+
+            },
+            1000: {
+                items: 3,
+
+            },
+            // 1200: {
+            //   items: 4,
+
+            // }
+        }
+    })
+</script>

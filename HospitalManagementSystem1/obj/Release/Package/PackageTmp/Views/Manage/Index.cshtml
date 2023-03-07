@@ -1,0 +1,22 @@
+﻿@model HospitalManagementSystem1.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+  
+       
+            
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword",new { },new { @class = "btn btn-warning" })
+            }
+           
+      
+   
+</div>

@@ -1,0 +1,113 @@
+﻿@model IEnumerable<MyClassLibrary.Models.Doctor>
+
+
+<img width="80" src="~/Images/DoctorIcon.png" />
+<h2 style="margin: 7rem 0; margin-top:3rem; color: #6c5ce7" >Our Specialists</h2>
+
+<div class="row">
+
+    <div class="doctors-Container">
+
+        @foreach (var item in Model)
+        {
+
+            <div class="doctor-box">
+               
+                <div class="img-div">
+                    <img src="@Url.Content(item.DoctorImagePath)" alt="DoctorImg" />
+                   @* <img src="~/Images/nipun (2).jpg" />*@
+                </div>
+
+                <p>@item.dptid.DepartmentName<p>
+                <p>@item.DoctorName</p>
+                <p>@item.DoctorAge</p>
+                <p>@item.DoctorDaysAvailable</p>
+                <p>@item.DoctorAvailableSlots</p>
+            </div>
+
+        }
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dptid.DepartmentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorAplhaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorAge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorYoe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorDaysAvailable)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorImagePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorAvailableSlots)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.dptid.DepartmentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorAplhaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorAge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorYoe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorDaysAvailable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorIsAvailable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorImagePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorAvailableSlots)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>*@

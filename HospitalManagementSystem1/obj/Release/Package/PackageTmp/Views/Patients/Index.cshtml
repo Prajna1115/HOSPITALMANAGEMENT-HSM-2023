@@ -1,0 +1,61 @@
+﻿@model MyClassLibrary.Models.Patient
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script language='javascript'>
+
+     var msg = '@TempData["msg"]'
+
+    if (msg.length) {
+        alert(msg);
+    }
+
+</script>
+
+
+
+
+
+<div class="row">
+    <h1 class="my-details-title">My Details</h1>
+    <div class="col-md-8 col-md-offset-2 ">
+
+        <div class="My-Card">
+            <img src="@Url.Content(Model.PatientImagePath)" alt="img" />
+            <img style="left: 0; width: 10%" src="~/Images/patientIcon.png" />
+
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientName)</p>
+                <p> @Html.DisplayFor(model => model.PatientName)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientMobile)</p>
+                <p> @Html.DisplayFor(model => model.PatientMobile)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientAge)</p>
+                <p> @Html.DisplayFor(model => model.PatientAge)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientGender)</p>
+                <p> @Html.DisplayFor(model => model.PatientGender)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientBloodGroup)</p>
+                <p> @Html.DisplayFor(model => model.PatientBloodGroup)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.PatientAddress)</p>
+                <p> @Html.DisplayFor(model => model.PatientAddress)</p>
+            </div>
+
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-danger" })
+
+        </div>
+
+
+    </div>
+</div>
+

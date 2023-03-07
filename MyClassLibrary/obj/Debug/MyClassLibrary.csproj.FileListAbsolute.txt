@@ -1,0 +1,70 @@
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\MyClassLibrary.dll.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\EntityFramework.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\EntityFramework.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.AssemblyReference.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CopyComplete
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.InitialCreate.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.GenerateResource.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.appointmentmodelchanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.AspNetUSerstablemodified.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Patientmodelchangedwithalphaid.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.patientmodelchanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.imageaddddtopatientmodel.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.doctormodelchanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.doctormodeladdedstringpath.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Doctormodelslotsadded.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.appointmentmodeladdedslotsstring.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Appointmentmodedisplaynamesadded.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.adminmodeladde.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.adminAphaIdadded.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.imagepathaddedinadminmodel.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.departmentnamedisplaychanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.datetimeinappointmenttabelchanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.patietmodelbgadded.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.feedbackadded.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.cascadefalse.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.fkinappmodelmadenullable.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.ratingmadeint.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.isshowaddedinappmodel.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\MyClassLibrary.dll.config
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\EntityFramework.dll
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\EntityFramework.xml
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.AssemblyReference.cache
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.InitialCreate.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.appointmentmodelchanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.AspNetUSerstablemodified.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Patientmodelchangedwithalphaid.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.patientmodelchanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.imageaddddtopatientmodel.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.doctormodelchanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.doctormodeladdedstringpath.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Doctormodelslotsadded.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.appointmentmodeladdedslotsstring.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.Appointmentmodedisplaynamesadded.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.adminmodeladde.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.adminAphaIdadded.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.imagepathaddedinadminmodel.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.departmentnamedisplaychanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.datetimeinappointmenttabelchanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.patietmodelbgadded.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.feedbackadded.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.cascadefalse.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.fkinappmodelmadenullable.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.ratingmadeint.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.Migrations.isshowaddedinappmodel.resources
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.GenerateResource.cache
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CoreCompileInputs.cache
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CopyComplete
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+E:\HOSPITALMNG2023\HospitalSystem\MyClassLibrary\obj\Debug\MyClassLibrary.pdb

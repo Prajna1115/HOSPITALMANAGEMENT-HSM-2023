@@ -1,0 +1,236 @@
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\HospitalManagementSystem1.dll.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\HospitalManagementSystem1.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\HospitalManagementSystem1.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csc.exe
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csc.exe.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csc.rsp
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csi.exe
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csi.exe.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\csi.rsp
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.AppContext.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Console.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.IO.Compression.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Net.Http.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.ValueTuple.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\vbc.exe
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\vbc.exe.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\vbc.rsp
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\VBCSCompiler.exe
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Antlr3.Runtime.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\EntityFramework.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\EntityFramework.SqlServer.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\MyClassLibrary.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Newtonsoft.Json.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Owin.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Helpers.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Mvc.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Optimization.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Razor.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.Razor.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\WebGrease.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\MyClassLibrary.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\MyClassLibrary.dll.config
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Helpers.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Mvc.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Optimization.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.Razor.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\System.Web.WebPages.Razor.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Newtonsoft.Json.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Antlr3.Runtime.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\EntityFramework.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\EntityFramework.SqlServer.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.AssemblyReference.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.CoreCompileInputs.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.CopyComplete
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.dll
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.pdb
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.InitialCreate.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.GenerateResource.cache
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.ASpnetUserschanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.Registermodelchanged.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.customAspNetUsers.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.sdf.resources
+C:\Users\NIPUN GUPTA\source\repos\HospitalManagementSystem1\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.usertypemadestring.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\HospitalManagementSystem1.dll.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\HospitalManagementSystem1.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\HospitalManagementSystem1.pdb
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csc.exe
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csc.exe.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csc.rsp
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csi.exe
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csi.exe.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\csi.rsp
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.AppContext.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Collections.Immutable.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Console.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Globalization.Calendars.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.IO.Compression.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.IO.FileSystem.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Net.Http.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Net.Sockets.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Reflection.Metadata.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.ValueTuple.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Xml.XPath.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\vbc.exe
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\vbc.exe.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\vbc.rsp
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\VBCSCompiler.exe
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\roslyn\VBCSCompiler.exe.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Antlr3.Runtime.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\EntityFramework.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\EntityFramework.SqlServer.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Core.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Cookies.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Facebook.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Google.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.OAuth.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Twitter.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Web.Infrastructure.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\MyClassLibrary.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Newtonsoft.Json.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Owin.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Helpers.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Mvc.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Optimization.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Razor.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.Deployment.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.Razor.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\WebGrease.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\MyClassLibrary.pdb
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\MyClassLibrary.dll.config
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Helpers.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Mvc.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Optimization.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.Razor.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.Deployment.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\System.Web.WebPages.Razor.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Newtonsoft.Json.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Antlr3.Runtime.pdb
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\EntityFramework.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\EntityFramework.SqlServer.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Core.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Facebook.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Cookies.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Google.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.Twitter.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.Owin.Security.OAuth.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.AssemblyReference.cache
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.InitialCreate.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.ASpnetUserschanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.Registermodelchanged.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.customAspNetUsers.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.sdf.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.Migrations.usertypemadestring.resources
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.GenerateResource.cache
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.CoreCompileInputs.cache
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.csproj.CopyComplete
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.dll
+E:\HOSPITALMNG2023\HospitalSystem\HospitalManagementSystem1\obj\Debug\HospitalManagementSystem1.pdb

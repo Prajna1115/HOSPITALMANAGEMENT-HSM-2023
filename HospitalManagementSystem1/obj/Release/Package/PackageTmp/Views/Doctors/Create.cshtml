@@ -1,0 +1,214 @@
+﻿@model MyClassLibrary.Models.Doctor
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<script>
+
+    //function for checkbox selected event
+    function getSelected() {
+        var sList = "";
+        $('.dayCBox').each(function () {
+            if (this.checked) {
+                sList += this.value + ",";
+
+            }
+        });
+        sList = sList.substring(0, sList.length - 1);
+        $("#DoctorDaysAvailable").val(sList);
+        console.log($("#DoctorDaysAvailable").val())
+    }
+
+
+    //function for slots checkboxes event
+    function SelectedSlot() {
+        var sList = "";
+        $('.slotCBox').each(function () {
+            if (this.checked) {
+                sList += this.value + ",";
+
+            }
+        });
+        sList = sList.substring(0, sList.length - 1);
+        $("#DoctorAvailableSlots").val(sList);
+        console.log($("#DoctorAvailableSlots").val())
+    }
+
+
+    //alert message
+
+     var msg = '@TempData["msg"]'
+
+    if (msg.length) {
+        alert(msg);
+    }
+
+
+</script>
+
+
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2>Create</h2>
+                <h4>Doctor</h4>
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm("Create", "Doctors", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DepartmentId, "Department Name", htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.DropDownList("DepartmentId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorName, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.DoctorName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DoctorName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorAge, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.DoctorAge, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DoctorAge, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorYoe, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.DoctorYoe, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DoctorYoe, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorDaysAvailable, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.HiddenFor(model => model.DoctorDaysAvailable, new { htmlAttributes = new { id = "DoctorDaysAvailable" } })
+
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="monday" onchange="getSelected()" name="monday" value="monday">
+                                <label class="form-check-label"> monday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="tuesday" onchange="getSelected()" name="tuesday" value="tuesday">
+                                <label class="form-check-label">tueday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="wednesday" onchange="getSelected()" name="wednesday" value="wednesday">
+                                <label class="form-check-label">wednesday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="thursday" onchange="getSelected()" name="thursday" value="thursday">
+                                <label class="form-check-label">thursday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="friday" onchange="getSelected()" name="friday" value="friday">
+                                <label class="form-check-label">friday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="saturday" onchange="getSelected()" name="saturday" value="saturday">
+                                <label class="form-check-label">saturday</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="dayCBox form-check-input" type="checkbox" id="sunday" onchange="getSelected()" name="sunday" value="sunday">
+                                <label class="form-check-label">sunday</label>
+                            </div>
+
+
+
+
+                            @Html.ValidationMessageFor(model => model.DoctorDaysAvailable)
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorAvailableSlots, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.HiddenFor(model => model.DoctorAvailableSlots, new { htmlAttributes = new { id = "DoctorAvailableSlots" } })
+
+                            <div class="form-check">
+                                <input class="slotCBox form-check-input" type="checkbox" id="Morning(9am-11am)" onchange="SelectedSlot()" name="Morning(9am-11am)" value="Morning(9am-11am)">
+                                <label class="form-check-label"> Morning(9am-11am)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="slotCBox form-check-input" type="checkbox" id="Evening(1-5pm)" onchange="SelectedSlot()" name="Evening(1-5pm)" value="Evening(1-5pm)">
+                                <label class="form-check-label">Evening(1-5pm)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="slotCBox form-check-input" type="checkbox" id="Night(8pm-11pm)" onchange="SelectedSlot()" name="Night(8pm-11pm)" value="Night(8pm-11pm)">
+                                <label class="form-check-label">Night(8pm-11pm)</label>
+                            </div>
+
+                            @Html.ValidationMessageFor(model => model.DoctorAvailableSlots)
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorIsAvailable, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EnumDropDownListFor(model => model.DoctorIsAvailable, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DoctorIsAvailable, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorImagePath, "Upload Image", htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            <input type="file" name="file" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-success" />
+                        </div>
+                    </div>
+                </div>
+                }
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+@*@foreach (var item in ViewBag.daysList)
+    {
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"
+                       name="SelectedDay"
+                       value="@item.DayName" />
+                @item.DayName
+            </label>
+        </div>
+    }*@

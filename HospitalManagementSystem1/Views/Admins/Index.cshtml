@@ -1,0 +1,138 @@
+﻿@model MyClassLibrary.Models.Admin
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script language='javascript'>
+
+     var msg = '@TempData["msg"]'
+
+    if (msg.length) {
+        alert(msg);
+    }
+
+
+    //ajax call
+     $(document).ready(function () {
+        var url = '@Url.Action("fetchCount")';
+
+         $.getJSON(url, function (response) {
+             console.log(response);
+             $("#patientCount").text(response[0]);
+             $("#doctorCount").text(response[1]);
+             $("#adminCount").text(response[2]);
+             $("#appointmentCount").text(response[3]);
+             $("#fiveStarAppCount").text(response[4]);
+
+         });
+    });
+
+
+
+</script>
+
+<div class="row count-row-container ">
+    <h1 >Statistcs</h1>
+    <div class="col-md-3">
+        <div class="count-box">
+            <div class="box-bg"></div>
+            <h2>Patients</h2>
+            <img src="~/Images/patientIcon.png" />
+            <p id="patientCount"></p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="count-box">
+            <div class="box-bg"></div>
+            <h2>Doctors</h2>
+            <img src="~/Images/DoctorIcon.png" />
+            <p id="doctorCount"></p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="count-box">
+            <div class="box-bg"></div>
+            <h2>Admins</h2>
+            <img src="~/Images/AdminIcon.png" />
+            <p id="adminCount"></p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="count-box">
+            <div class="box-bg"></div>
+            <h2>Appointments</h2>
+            <img src="~/Images/AppointmentIcon.png" />
+            <p id="appointmentCount"></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="row  count-row-container">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="count-box">
+            <div class="box-bg"></div>
+            <h2>5 star Appointments</h2>
+            <img src="~/Images/AppointmentIcon.png" />
+            <img style="left: 0;" src="~/Images/super5star.png" />
+            <p id="fiveStarAppCount"></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <h1 class="my-details-title">My Details</h1>
+        <div class="col-md-8 col-md-offset-2 ">
+
+            <div class="My-Card">
+                <img src="@Url.Content(Model.AdminImagePath)" alt="img" />
+                <img style="left: 0; width: 10%" src="~/Images/AdminIcon.png" />
+                <div class="content">
+                    <p class="content-title"> @Html.DisplayNameFor(model => model.AdminName)</p>
+                    <p> @Html.DisplayFor(model => model.AdminName)</p>
+                </div>
+                <div class="content">
+                    <p class="content-title"> @Html.DisplayNameFor(model => model.AdminAge)</p>
+                    <p> @Html.DisplayFor(model => model.AdminAge)</p>
+                </div>
+                <div class="content">
+                    <p class="content-title"> @Html.DisplayNameFor(model => model.AdminMobile)</p>
+                    <p> @Html.DisplayFor(model => model.AdminMobile)</p>
+                </div>
+                <div class="content">
+                    <p class="content-title"> @Html.DisplayNameFor(model => model.AdminAddress)</p>
+                    <p> @Html.DisplayFor(model => model.AdminAddress)</p>
+                </div>
+                <div class="content">
+                    <p class="content-title"> @Html.DisplayNameFor(model => model.AdminGender)</p>
+                    <p> @Html.DisplayFor(model => model.AdminGender)</p>
+                </div>
+
+                @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-danger" })
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+﻿@model MyClassLibrary.Models.Appointment
+
+@{
+        ViewBag.Title = "Appointments";
+}
+
+@*javascript code for ajax calls*@
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        //datepicker 
+        document.getElementById("AppointmentDate").min = new Date().toISOString().split("T")[0];
+        console.log(  document.getElementById("AppointmentDate"))
+
+
+
+        var url1 = '@Url.Action("fetchDoctorNames")';
+        var doctors = $("#DoctorId");
+        var Slots = $("#AppointmentSlot");
+        Slots.empty();
+
+        doctors.empty();
+
+
+        $("#SearchDocBtn").click(function () {
+            //empty doctors and slots ddl
+            var Slots = $("#AppointmentSlot");
+            var doctors = $("#DoctorId");
+            Slots.empty();
+            doctors.empty();
+
+            //selected date of appointment
+            var date = new Date($('#AppointmentDate').val());
+            var dayNumber = date.getDay();
+            var dayType = "";
+
+            switch (dayNumber) {
+                case 1: dayType = "Monday"; break;
+                case 2: dayType = "Tuesday"; break;
+                case 3: dayType = "Wednesday"; break;
+                case 4: dayType = "Thursday"; break;
+                case 5: dayType = "Friday"; break;
+                case 6: dayType = "Saturday"; break;
+                case 0: dayType = "Sunday"; break;
+            }
+
+
+            $("#AppointmentDay").val(dayType);
+
+            //selected departments id
+            var selectedDptId = $("#DepartmentId").val();
+
+
+            $.getJSON(url1, { selectedDptId: selectedDptId, dayType:dayType }, function (response) {
+            doctors.empty();
+
+                if (response.length == 0) {
+                    alert("No doctor available on choosen date,choose another date and search again!");
+                } else {
+
+                     doctors.append($('<option></option>').text("Select").val("Select"));
+                    $.each(response, function (index, item) {
+                        doctors.append($('<option></option>').text(item.DoctorName).val(item.Id));
+                    });
+                }
+
+
+        });
+
+        });
+
+
+        //click event of selected doctor name
+        var url2 = '@Url.Action("fetchDoctorSlots")';
+        var Slots = $("#AppointmentSlot");
+        Slots.empty();
+
+        $("#DoctorId").change(function () {
+            var id = $(this).val();
+            console.log(id);
+            $.getJSON(url2, { selectedDoctorId: id }, function (response) {
+
+                Slots.empty();
+                Slots.append($('<option></option>').text("Select").val("Select"));
+                slotsArray = response.split(",");
+
+                slotsArray.forEach(function (item,index) {
+
+                    Slots.append($('<option></option>').text(item).val(item));
+                });
+
+            });
+        });
+
+
+
+    });
+
+
+    var msgnew = '@TempData["msgnew"]';
+
+    if (msgnew.length) {
+        alert(msgnew);
+    }
+
+
+
+</script>
+
+
+@*html colde for creat page*@
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2>Create</h2>
+                <h4>Appointment</h4>
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                                {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DepartmentId, "Department Names:", htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.DropDownList("DepartmentId", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AppointmentDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.AppointmentDate, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.AppointmentDate, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-4 col-md-8">
+                            <input id="SearchDocBtn" type="button" value="Seach Available Doctors" class="btn btn-warning" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DoctorId, "Available Doctors:", htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.DropDownList("DoctorId", null, "Select One...", htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.DoctorId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AppointmentSlot, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(model => model.AppointmentSlot, Enumerable.Empty<SelectListItem>(), "Select one...", htmlAttributes: new { @class = "form-control" })
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-md-offset-4 col-md-8">
+                            <input type="submit" value="Create" class="btn btn-success" />
+                        </div>
+                    </div>
+                </div>
+                @Html.HiddenFor(model => model.AppointmentDay)
+                @*<input type="hidden" name="AppointmentDay" id="AppointmentDay" />*@
+                                }
+
+
+            </div>
+
+            <div class="panel-footer">
+                @Html.ActionLink("Back to My Details", "Index", new { }, new { @class = "btn btn-primary" })
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

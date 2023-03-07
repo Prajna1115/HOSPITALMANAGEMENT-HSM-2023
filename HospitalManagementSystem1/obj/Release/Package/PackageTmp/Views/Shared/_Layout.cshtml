@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+
+    @Styles.Render("~/Content/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+    <!-- fontawesome 5/4  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--moment js cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="~/Scripts/owlcarousel/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="~/Scripts/owlcarousel/owl.theme.default.min.css">
+
+    <!--custom css sheet for layout page-->
+    <link href="~/Scripts/css/LayoutPage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div>
+            <p id="header-text">Hospital Management System</p>
+        </div>
+        <p id="time"></p>
+    </header>
+    <div class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                 
+                    @Html.ActionLink("Hospital System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="/Home/About"> <span class="glyphicon glyphicon-home"></span>About Us</a></li>
+                        <li><a href="/Home/OurSpecialists"> <span class="glyphicon glyphicon-education"></span>Our Specialists</a></li>
+
+                        @if (HttpContext.Current.User.IsInRole("Patient"))
+                        {
+
+                            <li><a href="/Patients/Create"> <span class="glyphicon glyphicon-plus-sign"></span>  Patient Form</a></li>
+                            <li><a href="/Patients"><span class="glyphicon glyphicon-info-sign"></span>  My Details</a></li>
+
+                            <li style="padding:10px" class="dropdown">
+                                <button style="padding:5px" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-th-list"></span> My Appointments
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Create Appointment", "CreateAppointment", "Patients")</li>
+                                    <li>@Html.ActionLink("View Appointments", "ViewAppointments", "Patients")</li>
+                                </ul>
+                            </li>
+
+
+
+                        }
+
+                        else if (HttpContext.Current.User.IsInRole("Doctor"))
+                        {
+                         
+
+                            <li><a href="/Doctors/Create"> <span class="glyphicon glyphicon-plus-sign"></span>  Doctor Form</a></li>
+                            <li><a href="/Doctors"><span class="glyphicon glyphicon-info-sign"></span>  My Details</a></li>
+
+                            <li style="padding:10px" class="dropdown">
+                                <button style="padding:5px" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-th-list"></span> My Appointments
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("View Pending Appointments", "ViewPendingAppointments", "Doctors")</li>
+                                    <li>@Html.ActionLink("View Completed Appointments", "ViewCompletedAppointments", "Doctors")</li>
+                                </ul>
+                            </li>
+
+
+
+                        }
+
+                        else if (HttpContext.Current.User.IsInRole("Admin"))
+                        {
+
+
+                            <li><a href="/Admins/Create"> <span class="glyphicon glyphicon-plus-sign"></span>  Admin Form</a></li>
+                            <li><a href="/Admins"><span class="glyphicon glyphicon-info-sign"></span>  My Details</a></li>
+
+                            <li style="padding:10px" class="dropdown">
+                                <button style="padding:5px" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-th-list"></span>   View
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("View All Patients", "ViewAllPatients", "Admins")</li>
+                                    <li>@Html.ActionLink("View All Doctors", "ViewAllDoctors", "Admins")</li>
+                                    <li>@Html.ActionLink("View All Appointments", "ViewAllAppointments", "Admins")</li>
+                                </ul>
+                            </li>
+
+                        }
+
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer>
+            <div class="socialBtns">
+                <a target="_blank" href="" class=" fa fa-facebook"></a>
+                <a target="_blank" href="" class=" fa fa-instagram"></a>
+                <a target="_blank" href="mailto: nipungarg.nipun@gmail.com" class=" fa fa-envelope "></a>
+                <a style="margin: 0" target="_blank" href="tel:+919899041964" class="fa fa-phone"></a>
+            </div>
+          
+            <p>&copy; @DateTime.Now.Year HospitalManagementSystem</p>
+
+            <div onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="up">
+                <span class="fa fa-angle-double-up"></span>
+            </div>
+
+            <p>
+                One Microsoft Way
+                <br />
+                Redmond, WA 98052-6399
+                <br />
+                P: 425.555.0100
+                <br />
+                Support: Support@example.com
+                <br />
+                Marketing: Marketing@example.com
+            </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!--custom js for this page-->
+    <script>
+
+        let TimeContainer = document.getElementById("time");
+        TimeContainer.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+        let TimeIntervalId = setInterval(function () {
+
+            TimeContainer.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+        }, 1000)
+    </script>
+</body>
+</html>

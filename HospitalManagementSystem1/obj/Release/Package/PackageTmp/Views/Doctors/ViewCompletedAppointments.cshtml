@@ -1,0 +1,80 @@
+﻿@model IEnumerable<MyClassLibrary.Models.Appointment>
+
+@{
+    ViewBag.Title = "ViewCompletedAppointments";
+}
+
+<h2>View Completed Appointments</h2>
+
+<p id="searchTxt">Type something in the input field to search the table for doctor names,Appointment Slot,Appointment Status etc..</p>
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+<br />
+
+<div class="table-responsive" >
+<table class="table table-hover table-bordered table-striped  table custom-table-style ">
+
+    <thead>
+
+        <tr>
+            <th>
+                Patient Name:
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentSlot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentStatus)
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody id="myTable">
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ptid.PatientName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppointmentDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppointmentDay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppointmentSlot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AppointmentStatus)
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

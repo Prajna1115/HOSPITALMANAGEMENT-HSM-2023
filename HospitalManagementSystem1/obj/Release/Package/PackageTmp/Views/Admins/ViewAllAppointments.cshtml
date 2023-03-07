@@ -1,0 +1,148 @@
+﻿@model IEnumerable<MyClassLibrary.Models.Appointment>
+
+@{
+    ViewBag.Title = "ViewAllAppointments";
+}
+
+<h2>View All Appointments</h2>
+
+<p id="searchTxt">Type something in the input field to search the table for doctor names,Appointment Slot,Appointment Status,Patient Name,Department name etc..</p>
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+<br />
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered table-striped  table custom-table-style ">
+
+        <thead>
+
+            <tr>
+                <th>
+                    Patient Name:
+                </th>
+                <th>
+                    Doctor Name:
+                </th>
+                <th>
+                    Doctor department:
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AppointmentDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AppointmentDay)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AppointmentSlot)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AppointmentStatus)
+                </th>
+                <th>Feedback</th>
+                <th>Click to Show/hide on Index Page</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+
+        <tbody id="myTable">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ptid.PatientName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.docid.DoctorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dptid.DepartmentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppointmentDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppointmentDay)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppointmentSlot)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AppointmentStatus)
+                    </td>
+                    <td>
+
+                        @if (item.IsFeedbackGiven == "true")
+                        {
+                            <p>@item.fbid.FeedbackDesc</p>
+                            <br />
+
+                            string path = "../Images/" + item.fbid.FeedbackRating + "star.png";
+
+                            <img src=@path width="60" alt="rating img" />
+                        }
+                        else
+                        {
+                            <p>Feedback Pending</p>
+                        }
+
+                    </td>
+
+                    <td>
+                        @if (item.IsFeedbackGiven == "true")
+                        {
+                            if (item.isFeedbackShow == true)
+                            {
+
+                                <input type="button" class="btn btn-success" value="Show" disabled />
+                                @Html.ActionLink("hide", "hideFeedback", new { id = item.Id }, new { @class = "btn btn-danger" })
+
+                            }
+                            else
+                            {
+
+                                @Html.ActionLink("show", "showFeedback", new { id = item.Id }, new { @class = "btn btn-success" })
+                                <input type="button" class="btn btn-danger" value="hide" disabled />
+
+                            }
+
+                        }
+                        else
+                        {
+                            <p>Feedback Pending</p>
+                        }
+
+                    </td>
+
+                    <td>
+
+                        @Html.ActionLink("Delete", "deleteAppointment", new { id = item.Id }, new { @class = "btn btn-danger" })
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+
+
+
+
+</script>

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<MyClassLibrary.Models.Patient>
+
+@{
+    ViewBag.Title = "ViewAllPatients";
+}
+
+<h2>View All Patients</h2>
+
+<p id="searchTxt">Type something in the input field to search the table for patient name,patient age etc..</p>
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+<br />
+
+<div class="table-responsive">
+    
+
+    <table class="table table-hover table-bordered table-striped  table custom-table-style ">
+        <thead>
+            <tr>
+
+                <th>Patient Image:</th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientMobile)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientAge)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientGender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientBloodGroup)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientAddress)
+                </th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> <img src="@Url.Content(item.PatientImagePath)" width="100" alt="patientImg" /> </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientMobile)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientAge)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientGender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientBloodGroup)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientAddress)
+                    </td>
+
+
+                    <td>
+
+                        @Html.ActionLink("Delete", "DeletePatient", new { id = item.Id, alphaId = item.PatientAplhaId }, new { @class = "btn btn-danger" })
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+

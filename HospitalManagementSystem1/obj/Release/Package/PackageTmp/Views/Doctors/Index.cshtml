@@ -1,0 +1,68 @@
+﻿@model MyClassLibrary.Models.Doctor
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<script language='javascript'>
+
+     var msg = '@TempData["msg"]'
+
+    if (msg.length) {
+        alert(msg);
+    }
+
+</script>
+
+
+
+<div class="row">
+    <h1 class="my-details-title">My Details</h1>
+    <div class="col-md-8 col-md-offset-2 ">
+
+        <div class="My-Card">
+            <img src="@Url.Content(Model.DoctorImagePath)" alt="img" />
+            <img style="left: 0; width: 10%" src="~/Images/DoctorIcon.png" />
+
+            <div class="content">
+                <p class="content-title">@Html.DisplayNameFor(model => model.dptid.DepartmentName):</p>
+                <p> @Html.DisplayFor(model => model.dptid.DepartmentName)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorName)</p>
+                <p> @Html.DisplayFor(model => model.DoctorName)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorAge)</p>
+                <p> @Html.DisplayFor(model => model.DoctorAge)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorYoe)</p>
+                <p> @Html.DisplayFor(model => model.DoctorYoe)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorDaysAvailable)</p>
+                <p> @Html.DisplayFor(model => model.DoctorDaysAvailable)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorAvailableSlots)</p>
+                <p> @Html.DisplayFor(model => model.DoctorAvailableSlots)</p>
+            </div>
+            <div class="content">
+                <p class="content-title"> @Html.DisplayNameFor(model => model.DoctorIsAvailable)</p>
+                <p> @Html.DisplayFor(model => model.DoctorIsAvailable)</p>
+            </div>
+
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-danger" })
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
